@@ -1,0 +1,1 @@
+# freqtrade-nfi-setup
