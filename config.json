@@ -42,8 +42,8 @@
     },
     "exchange": {
         "name": "binance",
-        "key": "sdmnnFZJrgXdb32SSJwTPdkG6qSQTVgBtLpj4tI8dgtH0KBmSC2clHF1r3H7gkMq",
-        "secret": "YZ9UM7qbQTDzYcWuR67MX1LgAYvLNVGfEGBxWOyHv9o5yz49fsAMbVAWiiDZSYev",
+        "key": " ",
+        "secret": " ",
         "ccxt_config": {"enableRateLimit": false},
         "ccxt_async_config": {
             "enableRateLimit": false,
@@ -70,13 +70,15 @@
       // Stable
       "(BUSD|CUSDT|DAI|PAXG|SUSD|TUSD|USDC|USDP|USDT|VAI)/.*",
       // FAN
-      "(ACM|AFA|ALA|ALL|APL|ASR|ATM|BAR|CAI|CITY|FOR|GAL|GOZ|IBFK|JUV|LAZIO|LEG|LOCK-1|NAVI|NMR|NOV|OG|PFL|PSG|ROUSH|STV|TH|TRA|UCH|UFC|YBO)/.*"
+      "(ACM|AFA|ALA|ALL|APL|ASR|ATM|BAR|CAI|CITY|FOR|GAL|GOZ|IBFK|JUV|LAZIO|LEG|LOCK-1|NAVI|NMR|NOV|OG|PFL|PSG|ROUSH|STV|TH|TRA|UCH|UFC|YBO)/.*",
+      // ETC
+      "( "
         ]
     },
     "pairlists": [
         {
             "method": "VolumePairList",
-            "number_assets": 100,
+            "number_assets": 70,
             "sort_key": "quoteVolume",
             "min_value": 0,
             "refresh_period": 300
@@ -99,8 +101,8 @@
     },
     "telegram": {
         "enabled": true,
-        "token": "1952703310:AAHrv7EI2XU-X4dthuu-3qfa5enJg_zVHIU",
-        "chat_id": "345042285"
+        "token": " ",
+        "chat_id": " "
     },
     "api_server": {
         "enabled": true,
@@ -108,7 +110,7 @@
         "listen_port": 8080,
         "verbosity": "error",
         "enable_openapi": false,
-        "jwt_secret_key": "4f0f74ddd3a91d6452892e35660121f87ae30dc799b0ff09935fc41f3a2157b7",
+        "jwt_secret_key": " ",
         "CORS_origins": [],
         "username": "freqtrader",
         "password": ""
