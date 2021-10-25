@@ -46,5 +46,5 @@ press "tab" or "enter"
 
 # check telegram for status
 
-# apy and dry-run results:
+# profit and dry-run results:
 http://hippocritical.ddns.net:3000/
