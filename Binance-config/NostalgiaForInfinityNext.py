@@ -22,7 +22,7 @@ log = logging.getLogger(__name__)
 
 
 ###########################################################################################################
-##                NostalgiaForInfinityV8 by iterativ                                                     ##
+##                NostalgiaForInfinityV8 by iterativ    V7.3.1 BUSD                                      ##
 ##                                                                                                       ##
 ##    Strategy for Freqtrade https://github.com/freqtrade/freqtrade                                      ##
 ##                                                                                                       ##
