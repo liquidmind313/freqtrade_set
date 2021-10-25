@@ -79,7 +79,7 @@ else:
 ###########################################################################################################
 
 
-class NostalgiaForInfinityNext(IStrategy):
+class NFiNext_772USDT_Kucoin(IStrategy):
     INTERFACE_VERSION = 2
 
     plot_config = {
