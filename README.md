@@ -9,7 +9,7 @@
 4. ```cd freqtrade```
 5. ```git checkout stable```
 
-# --install, Install freqtrade from scratch
+# install freqtrade from scratch
 6. ```sudo ./setup.sh -i```
 
 # then activate your .env
