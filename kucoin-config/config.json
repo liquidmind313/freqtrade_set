@@ -42,11 +42,15 @@
     "exchange": {
         "name": "kucoin",
         "key": " ",
-        "secret": " ",
-        "ccxt_config": {"enableRateLimit": false},
+        "secret": "  ",
+        "password": " 32 passphrase ",
+        "ccxt_config": {
+            "enableRateLimit": true,
+            "rateLimit": 200
+        },
         "ccxt_async_config": {
-            "enableRateLimit": false,
-            "rateLimit": 0
+            "enableRateLimit": true,
+            "rateLimit": 200
         },
         "pair_whitelist": [
             "BTC/USDT",
@@ -83,7 +87,7 @@
             "min_value": 0,
             "refresh_period": 300
         },
-    {"method": "AgeFilter", "min_days_listed": 30},
+    {"method": "AgeFilter", "min_days_listed": 20},
     {"method": "SpreadFilter", "max_spread_ratio": 0.005},
 
         {
