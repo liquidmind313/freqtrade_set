@@ -30,7 +30,7 @@ else:
 
 
 ###########################################################################################################
-##                NostalgiaForInfinityV8 by iterativ    V 7.7.2 USDT Kucoin                              ##
+##                NostalgiaForInfinityNext by iterativ    V 7.7.2 USDT Kucoin                                ##
 ##                                                                                                       ##
 ##    Strategy for Freqtrade https://github.com/freqtrade/freqtrade                                      ##
 ##                                                                                                       ##
@@ -79,7 +79,7 @@ else:
 ###########################################################################################################
 
 
-class NFiNext_772USDT_Kucoin(IStrategy):
+class NostalgiaForInfinityNext(IStrategy):
     INTERFACE_VERSION = 2
 
     plot_config = {
