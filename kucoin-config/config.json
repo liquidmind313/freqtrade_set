@@ -82,12 +82,12 @@
     "pairlists": [
         {
             "method": "VolumePairList",
-            "number_assets": 70,
+            "number_assets": 77,
             "sort_key": "quoteVolume",
             "min_value": 0,
             "refresh_period": 300
         },
-    {"method": "AgeFilter", "min_days_listed": 20},
+    {"method": "AgeFilter", "min_days_listed": 24},
     {"method": "SpreadFilter", "max_spread_ratio": 0.005},
 
         {
