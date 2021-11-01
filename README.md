@@ -34,7 +34,7 @@
 # mod the config file !
 15. ```cd freqtrade```
 16. ```sudo nano config.json```
-17. * copy your exchange and telegram keys somewhere safe
+17. copy your exchange and telegram keys somewhere safe
 18. ```ctrl+x``` 
 19. ```cd``` 
 20. ```cd /freqtrade-nfi-setup/kucoin-config```
@@ -42,7 +42,7 @@
 22. ```cd```
 23. ```cd freqtrade```
 24. ```sudo nano config.json```
-25. * paste the exchange and telegram keys  
+25. paste the exchange and telegram keys  
 26. ```ctrl+s```
 27. ```ctrl+x```
 
@@ -61,8 +61,8 @@
 
 # starting the bot
 37. ```freqtrade trade --strategy NostalgiaForInfinityNext```
-38. press "CTRL"+"A"+"D"
-39. * close the ssh session 
+38. press CTRL+A+D
+39. close the ssh session 
 40. # check telegram for status and start
 
 
