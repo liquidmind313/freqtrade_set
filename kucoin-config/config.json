@@ -54,16 +54,7 @@
         },
         "pair_whitelist": [
             "BTC/USDT",
-            "ETH/USDT",
-            "SOL/USDT",
-            "AR/USDT",
-            "FTT/USDT",
-            "FTM/USDT",
-            "AVAX/USDT",
-            "ATOM/USDT",
-            "ADA/USDT",
-            "NEAR/USDT",
-            "RAY/USDT"
+            "ETH/USDT"
         ],
        "pair_blacklist": [
       // Exchange Tokens
@@ -76,7 +67,7 @@
       // FAN Tokens
       "(ACM|AFA|ALA|ALL|APL|ASR|ATM|BAR|CAI|CITY|FOR|GAL|GOZ|IBFK|JUV|LEG|LOCK-1|NAVI|NMR|NOV|OG|PFL|PSG|ROUSH|STV|TH|TRA|UCH|UFC|YBO)/.*",
       // Other Coins
-      "(SLP|XVS|MEM|XYM|POLX|CARR|SKEY|MASK|KLV|TLOS|AOA|LSS|SUTER|TCP|INTER|HTR|SOLVE|LPT|CIX100|ETHO|ZCX|DINO|MXW|DAPPT)/.*"
+      "(SLP|XVS|MEM|XYM|POLX|CARR|SKEY|MASK|KLV|TLOS|AOA|LSS|SUTER|TCP|INTER|HTR|SOLVE|LPT|CIX100|ETHO|ZCX|DINO|MXW|DAPPT|RFOX|RLY|ONT|LTX|XDC|XDB)/.*"
         ]
     },
     "pairlists": [
