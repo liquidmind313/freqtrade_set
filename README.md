@@ -4,65 +4,65 @@
  
 
 # download
-1.```sudo apt-get update``` 
-2.```sudo apt install -y python3-pip python3-venv python3-dev python3-pandas git```
-3.```git clone https://github.com/freqtrade/freqtrade.git```
-4.```cd freqtrade```
-5.```git checkout stable```
+1. ```sudo apt-get update``` 
+2. ```sudo apt install -y python3-pip python3-venv python3-dev python3-pandas git```
+3. ```git clone https://github.com/freqtrade/freqtrade.git```
+4. ```cd freqtrade```
+5. ```git checkout stable```
 
 # install freqtrade from scratch
-```sudo ./setup.sh -i```
+6. ```sudo ./setup.sh -i```
 
 # then activate your .env
-```source ./.env/bin/activate```
+7. ```source ./.env/bin/activate```
 
 # creates new config *quiz
-```freqtrade new-config -c config.json```
+8. ```freqtrade new-config -c config.json```
 *! IMPORTANT !
 *(you will need to copy over the whole "config.json" content from "freqtrade-nfi-setup" git depending on the exchange you will use)*
 
 # strategy installation
-```cd ~```
-```git clone https://github.com/liquidmind313/freqtrade-nfi-setup.git```
-```cd freqtrade-nfi-setup/kucoin-config```
-```sudo cp NostalgiaForInfinityNext.py ../../freqtrade/user_data/strategies/```
+9. ```cd ~```
+10. ```git clone https://github.com/liquidmind313/freqtrade-nfi-setup.git```
+11. ```cd freqtrade-nfi-setup/kucoin-config```
+12. ```sudo cp NostalgiaForInfinityNext.py ../../freqtrade/user_data/strategies/```
 
 # install nano
- ```sudo apt update```
- ```sudo apt install nano```
+13. ```sudo apt update```
+14. ```sudo apt install nano```
 
 # mod the config file !
-```cd freqtrade```
-```sudo nano config.json```
-* copy your exchange and telegram keys somewhere safe
-```ctrl+x``` 
-```cd``` 
-```cd /freqtrade-nfi-setup/kucoin-config```
-```sudo cp config.json ../../freqtrade```
-```cd```
-```cd freqtrade```
-```sudo nano config.json```
-* paste the exchange and telegram keys  
-```ctrl+s```
-```ctrl+x```
+15. ```cd freqtrade```
+16. ```sudo nano config.json```
+17. * copy your exchange and telegram keys somewhere safe
+18. ```ctrl+x``` 
+19. ```cd``` 
+20. ```cd /freqtrade-nfi-setup/kucoin-config```
+21. ```sudo cp config.json ../../freqtrade```
+22. ```cd```
+23. ```cd freqtrade```
+24. ```sudo nano config.json```
+25. * paste the exchange and telegram keys  
+26. ```ctrl+s```
+27. ```ctrl+x```
 
 # install screen
-```sudo apt-get install screen```
-```screen```
-press "tab" or "enter"
+28. ```sudo apt-get install screen```
+29. ```screen```
+30. press "tab" or "enter"
 
 # python setup
-```cd ~/freqtrade/```
-```sudo python3 -m venv .env```
-```source .env/bin/activate```
-```sudo python3 -m pip install — upgrade pip```
-```sudo python3 -m pip install -e .```
-```pip install pandas_ta```
+31. ```cd ~/freqtrade/```
+32. ```sudo python3 -m venv .env```
+33. ```source .env/bin/activate```
+34. ```sudo python3 -m pip install — upgrade pip```
+35. ```sudo python3 -m pip install -e .```
+36. ```pip install pandas_ta```
 
 # starting the bot
-```freqtrade trade --strategy NostalgiaForInfinityNext```
-press "CTRL"+"A"+"D"
-* close the ssh session 
-# check telegram for status and start
+37. ```freqtrade trade --strategy NostalgiaForInfinityNext```
+38. press "CTRL"+"A"+"D"
+39. * close the ssh session 
+40. # check telegram for status and start
 
 
