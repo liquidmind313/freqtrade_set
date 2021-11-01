@@ -63,6 +63,6 @@
 37. ```freqtrade trade --strategy NostalgiaForInfinityNext```
 38. press CTRL+A+D
 39. close the ssh session 
-40. # check telegram for status and start
+# check telegram for status and start
 
 
