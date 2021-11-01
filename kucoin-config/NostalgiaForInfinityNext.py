@@ -30,7 +30,7 @@ else:
 
 
 ###########################################################################################################
-##                NostalgiaForInfinityV8 by iterativ    V 7.7.2 USDT Kucoin                              ##
+##       NostalgiaForInfinityNext by iterativ  V 7.7.2 USDT Kucoin *modded Trailing Stop @bAdBoY         ##
 ##                                                                                                       ##
 ##    Strategy for Freqtrade https://github.com/freqtrade/freqtrade                                      ##
 ##                                                                                                       ##
@@ -79,7 +79,7 @@ else:
 ###########################################################################################################
 
 
-class NFiNext_772USDT_Kucoin(IStrategy):
+class NostalgiaForInfinityNext(IStrategy):
     INTERFACE_VERSION = 2
 
     plot_config = {
@@ -97,13 +97,13 @@ class NFiNext_772USDT_Kucoin(IStrategy):
         "0": 10,
     }
 
-    stoploss = -0.99
+    stoploss = -0.33
 
     # Trailing stoploss (not used)
-    trailing_stop = False
+    trailing_stop = True
     trailing_only_offset_is_reached = True
     trailing_stop_positive = 0.01
-    trailing_stop_positive_offset = 0.03
+    trailing_stop_positive_offset = 0.04
 
     use_custom_stoploss = False
 

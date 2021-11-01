@@ -72,8 +72,7 @@
       // FAN
       "(ACM|AFA|ALA|ALL|APL|ASR|ATM|BAR|CAI|CITY|FOR|GAL|GOZ|IBFK|JUV|LAZIO|LEG|LOCK-1|NAVI|NMR|NOV|OG|PFL|PSG|ROUSH|STV|TH|TRA|UCH|UFC|YBO)/.*",
       // ETC
-      "( "
-        ]
+         ]
     },
     "pairlists": [
         {

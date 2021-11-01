@@ -1,9 +1,9 @@
-*for vm setup 2cpu 2gb ram recommended 
-*for backtesting 25gb space
-
+*for vm setup 2vcpu 2gb ram 10gb hdd recommended* 
+*kucoin -20% ref: https://www.kucoin.com/ucenter/signup?rcode=r3AP4HF
+ 
 
 # download
-1. ```sudo apt-get update```
+1. ```sudo apt-get update``` 
 2. ```sudo apt install -y python3-pip python3-venv python3-dev python3-pandas git```
 3. ```git clone https://github.com/freqtrade/freqtrade.git```
 4. ```cd freqtrade```
@@ -24,27 +24,45 @@
 9. ```cd ~```
 10. ```git clone https://github.com/liquidmind313/freqtrade-nfi-setup.git```
 11. ```cd freqtrade-nfi-setup/kucoin-config```
-12. ```sudo cp NostalgiaForInfinityNext.py ../freqtrade/user_data/strategies/```
+12. ```sudo cp NostalgiaForInfinityNext.py ../../freqtrade/user_data/strategies/```
+
+# install nano
+13. ```sudo apt update```
+14. ```sudo apt install nano```
+
+# mod the config file !
+15. ```cd freqtrade```
+16. ```sudo nano config.json```
+17. copy your exchange and telegram keys somewhere safe
+18. ```ctrl+x``` 
+19. ```cd``` 
+20. ```cd /freqtrade-nfi-setup/kucoin-config```
+21. ```sudo cp config.json ../../freqtrade```
+22. ```cd```
+23. ```cd freqtrade```
+24. ```sudo nano config.json```
+25. paste the exchange and telegram keys  
+26. ```ctrl+s```
+27. ```ctrl+x```
 
 # install screen
-13. ```sudo apt-get install screen```
-14. ```screen```
-press "tab" or "enter"
+28. ```sudo apt-get install screen```
+29. ```screen```
+30. press "tab" or "enter"
 
 # python setup
-15. ```cd ~/freqtrade/```
-16. ```sudo python3 -m venv .env```
-17. ```source .env/bin/activate```
-18. ```sudo python3 -m pip install — upgrade pip```
-19. ```sudo python3 -m pip install -e .```
-20. ```pip install pandas_ta```
+31. ```cd ~/freqtrade/```
+32. ```sudo python3 -m venv .env```
+33. ```source .env/bin/activate```
+34. ```sudo python3 -m pip install — upgrade pip```
+35. ```sudo python3 -m pip install -e .```
+36. ```pip install pandas_ta```
 
 # starting the bot
-21. ```freqtrade trade --strategy NostalgiaForInfinityNext```
-22. press "CTRL"+"A"+"D"
-*(you can close the ssh session now)
-
-# check telegram for status
+37. ```freqtrade trade --strategy NostalgiaForInfinityNext```
+38. press CTRL+A+D
+39. close the ssh session 
+# check telegram for status and start
 
 # profit and dry-run results:
 http://hippocritical.ddns.net:3000/
