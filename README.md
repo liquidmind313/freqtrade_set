@@ -24,7 +24,7 @@
 9. ```cd ~```
 10. ```git clone https://github.com/liquidmind313/freqtrade-nfi-setup.git```
 11. ```cd freqtrade-nfi-setup/kucoin-config```
-12. ```sudo cp NostalgiaForInfinityNext.py ../freqtrade/user_data/strategies/```
+12. ```sudo cp NostalgiaForInfinityNext.py ../../freqtrade/user_data/strategies/```
 
 # install screen
 13. ```sudo apt-get install screen```
