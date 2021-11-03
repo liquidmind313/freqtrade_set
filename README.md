@@ -29,7 +29,7 @@
 # install nano
 13. ```sudo apt update```
 14. ```sudo apt install nano```
-14.5 ```cd```
+15. ```cd```
 
 # mod the config file !
 15. ```cd freqtrade```
