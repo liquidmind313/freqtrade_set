@@ -66,7 +66,7 @@
 # check telegram for status and start
 
 # (extra "forcebuy" function)
-in telegram send command:
-example ```/forcebuy BTC/USDT```
+example telegram command:
+ ```/forcebuy BTC/USDT```
 
 
