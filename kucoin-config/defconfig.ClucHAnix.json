@@ -18,6 +18,7 @@ config.json (for use with ClucHAnix) {
         "buy": "market",
         "sell": "market",
         "forcesell": "market",
+        "forcebuy": "market",
         "emergencysell": "market",
         "trailing_stop_loss": "market",
         "stoploss": "market",
