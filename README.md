@@ -67,6 +67,6 @@
 
 # (extra "forcebuy" function)
 in telegram send command:
-example ```/forcebuy BTC/USDT
+example ```/forcebuy BTC/USDT```
 
 
