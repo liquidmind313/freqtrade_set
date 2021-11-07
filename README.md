@@ -66,3 +66,18 @@
 # check telegram for status and start
 
 
+# (for FTX subaccount use)
+  *only for FTX, kucoin subacc is standart based acc
+```"exchange": {```
+    ```"ccxt_config": {```
+        ```"headers": {```
+            ```"FTX-SUBACCOUNT": "name"```
+        ```}```
+    ```},```
+```}```
+
+# (extra "forcebuy" function)
+in telegram send command:
+example ```/forcebuy BTC/USDT
+
+
