@@ -1,16 +1,18 @@
 {
-    "max_open_trades": 4,
+    "max_open_trades": 3,
     "stake_currency": "USDT",
     "stake_amount": "unlimited",
+    "amend_last_stake_amount ": true,
     "tradable_balance_ratio": 0.99,
     "fiat_display_currency": "USD",
-    "timeframe": "5m",
+//    "timeframe": "1m",
     "dry_run": false,
     "cancel_open_orders_on_exit": false,
+    "ignore_buying_expired_candle_after" : 90,
     "unfilledtimeout": {
         "buy": 10,
         "sell": 30,
-        "unit": "minutes"
+        "unit": "seconds"        
     },
     "order_types": {
         "buy": "market",
@@ -31,20 +33,19 @@
         "check_depth_of_market": {
             "enabled": false,
             "bids_to_ask_delta": 1
-
         }
     },
     "ask_strategy": {
         "price_side": "bid",
         "use_order_book": false,
         "order_book_top": 1,
-        "order_book_max": 1  
-    },
+        "order_book_max": 1    
+        },
     "exchange": {
         "name": "kucoin",
-        "key": " ",
-        "secret": "  ",
-        "password": " 32 passphrase ",
+        "key": " x ",
+        "secret": " x ",
+        "password": " x ",
         "ccxt_config": {
             "enableRateLimit": true,
             "rateLimit": 200
@@ -77,7 +78,9 @@
             "number_assets": 77,
             "sort_key": "quoteVolume",
             "min_value": 0,
-            "refresh_period": 300
+            "refresh_period": 3600,
+            "lookback_timeframe": "1h",
+            "lookback_period": 48
         },
     {"method": "AgeFilter", "min_days_listed": 30},
     {"method": "SpreadFilter", "max_spread_ratio": 0.005},
@@ -86,17 +89,18 @@
             "method": "RangeStabilityFilter",
             "lookback_days": 5,
             "min_rate_of_change": 0.01,
-            "refresh_period": 1440
+            "refresh_period": 1040
         },
         {
             "method": "VolatilityFilter",
             "lookback_days": 5,
             "min_volatility": 0.02,
             "max_volatility": 0.75,
-            "refresh_period": 180
+            "refresh_period": 36000
         },
         {"method": "ShuffleFilter"},
         {"method": "PerformanceFilter"}
+
 
     ],
     "edge": {
@@ -108,15 +112,15 @@
         "stoploss_range_max": -0.1,
         "stoploss_range_step": -0.01,
         "minimum_winrate": 0.60,
-        "minimum_expectancy": 0.20,
+        "minimum_expectancy": 0.10,
         "min_trade_number": 10,
         "max_trade_duration_minute": 1440,
         "remove_pumps": false
     },
     "telegram": {
         "enabled": true,
-        "token": " ",
-        "chat_id": " "
+        "token": " x",
+        "chat_id": " x"
     },
     "api_server": {
         "enabled": true,

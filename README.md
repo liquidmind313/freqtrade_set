@@ -29,6 +29,7 @@
 # install nano
 13. ```sudo apt update```
 14. ```sudo apt install nano```
+15. ```cd```
 
 # mod the config file !
 15. ```cd freqtrade```
@@ -36,7 +37,7 @@
 17. copy your exchange and telegram keys somewhere safe
 18. ```ctrl+x``` 
 19. ```cd``` 
-20. ```cd /freqtrade-nfi-setup/kucoin-config```
+20. ```cd freqtrade-nfi-setup/kucoin-config```
 21. ```sudo cp config.json ../../freqtrade```
 22. ```cd```
 23. ```cd freqtrade```
@@ -63,5 +64,10 @@
 38. press CTRL+A+D
 # check telegram for status and start
 
+# (extra "forcebuy" function)
+example telegram command:
+ ```/forcebuy BTC/USDT```
+ 
 # profit and dry-run results:
 http://hippocritical.ddns.net:3000/
+ 
