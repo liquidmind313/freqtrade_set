@@ -1,5 +1,5 @@
 *for vm setup 2vcpu 2gb ram 10gb hdd recommended - ubuntu lts*  
-*kucoin ref: https://www.kucoin.com/ucenter/signup?rcode=r3AP4HF -20%
+*kucoin ref -20%: https://www.kucoin.com/ucenter/signup?rcode=r3AP4HF 
  
 
 # download
