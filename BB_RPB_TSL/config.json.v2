@@ -1,0 +1,173 @@
+// for BB_RPB_TSL for KC with PROXY use - not tested
+{
+    "max_open_trades": 5,
+    "stake_currency": "USDT",
+    "stake_amount": "unlimited",
+    "tradable_balance_ratio": 0.99,
+    "amend_last_stake_amount": true,
+    "fiat_display_currency": "USD",
+    "timeframe": "5m",
+    "dry_run": false,
+    "cancel_open_orders_on_exit": false,
+    "unfilledtimeout": {
+        "buy": 10,
+        "sell": 30,
+        "unit": "minutes"
+    },
+    "order_types": {
+        "buy": "market",
+        "sell": "market",
+        "forcesell": "market",
+        "forcebuy": "market",
+        "emergencysell": "market",
+        "trailing_stop_loss": "market",
+        "stoploss": "market",
+        "stoploss_on_exchange": false,
+        "stoploss_on_exchange_interval": 60 
+    },
+    "bid_strategy": {
+        "price_side": "ask",
+        "ask_last_balance": 0.0,
+        "use_order_book": false,
+        "order_book_top": 1,
+        "check_depth_of_market": {
+            "enabled": false,
+            "bids_to_ask_delta": 1
+
+        }
+    },
+    "ask_strategy": {
+        "price_side": "bid",
+        "use_order_book": false,
+        "order_book_top": 1,
+        "order_book_max": 1  
+    },
+    "exchange": {
+        "name": "kucoin",
+        "key": " ",
+        "secret": "  ",
+        "password": " 32 passphrase ",
+        "ccxt_config": {
+            "enableRateLimit": false,
+            "urls": {
+                "api": {
+                    "public": "http://127.0.0.1:8089/kucoin",
+                    "private": "http://127.0.0.1:8089/kucoin"
+                }
+            }
+        },
+        "ccxt_async_config": {
+            "enableRateLimit": false
+        },
+        "pair_whitelist": [
+            "BTC/USDT",
+            "ETH/USDT"
+        ],
+       "pair_blacklist": [
+            // Exchange Tokens
+            "KCS/.*",
+            // Major Crypto
+            "(BTC|ETH)/.*",
+            // Leverage tokens
+            ".*(3|3L|3S)/.*",
+            // Fiat
+            "(AUD|EUR|GBP|CHF|CAD|JPY)/.*",
+            // Stable tokens
+            "(BUSD|USDT|TUSD|USDC|CUSDT|DAI|USDN)/.*",
+            // FAN Tokens
+            "(ACM|AFA|ALA|ALL|APL|ASR|ATM|BAR|CAI|CITY|FOR|GAL|GOZ|IBFK|JUV|LEG|LOCK-1|NAVI|NMR|NOV|OG|PFL|PSG|R>
+            // Other Coins
+            "(SLP|XVS|MEM|AMPL|XYM|POLX|CARR|SKEY|MASK|KLV|TLOS|JAR|BTCST|SUPER|LAYER|CTSI|MKR|HYDRA|DEGO)/.*",
+            // Other A
+            "(LPT|LRC|LTX|MIR|STMX|SXP|ZEC|VELO|SUN|CIRUS|REVV|XSR|VSYS|CBC|SCLP|ANKR)/.*",
+        ]
+    },
+    "pairlists": [
+         {
+                        "method": "VolumePairList",
+                        "number_assets": 130,
+                        "sort_key": "quoteVolume",
+                        "refresh_period": 7200,
+                        "lookback_timeframe": "30m",
+                        "lookback_period": 96
+              },
+              {"method": "AgeFilter", "min_days_listed": 20},
+              {"method": "SpreadFilter", "max_spread_ratio": 0.006},
+              {
+                        "method": "PriceFilter",
+                        "min_price": 0.001
+              },
+              { 
+                        "method": "RangeStabilityFilter",
+                        "lookback_days": 3,
+                        "min_rate_of_change": 0.05,
+                        "refresh_period": 300
+             },
+             { 
+                        "method": "VolatilityFilter",
+                        "lookback_days": 3,
+                        "min_volatility": 0.02,
+                        "max_volatility": 0.42,
+                        "refresh_period": 300
+              },
+        {"method": "ShuffleFilter"},
+        {"method": "PerformanceFilter"},
+        {
+            "method": "VolumePairList",
+                         "number_assets": 70,
+                         "sort_key": "quoteVolume",
+                         "refresh_period": 300,
+        }
+    ],
+    "edge": {
+        "enabled": false,
+        "process_throttle_secs": 3600,
+        "calculate_since_number_of_days": 7,
+        "allowed_risk": 0.01,
+        "stoploss_range_min": -0.01,
+        "stoploss_range_max": -0.1,
+        "stoploss_range_step": -0.01,
+        "minimum_winrate": 0.60,
+        "minimum_expectancy": 0.20,
+        "min_trade_number": 10,
+        "max_trade_duration_minute": 1440,
+        "remove_pumps": false
+    },
+    "telegram": {
+        "enabled": true,
+        "token": " ",
+        "chat_id": " ",
+"keyboard": [
+        ["/profit","/balance","/status table","/daily"],
+        ["/performance","/logs","/show_config","/whitelist"]
+        ["/reload_config","/help","/start","/stop"]
+        ],
+        "notification_settings": {
+            "status": "silent",
+            "warning": "on",
+            "startup": "silent",
+            "buy": "silent",
+            "sell": "silent",
+            "buy_cancel": "off",
+            "sell_cancel": "off",
+            "buy_fill": "off",
+            "sell_fill": "off"
+    },
+    "api_server": {
+        "enabled": true,
+        "listen_ip_address": "127.0.0.1",
+        "listen_port": 8080,
+        "verbosity": "error",
+        "enable_openapi": false,
+        "jwt_secret_key": " ",
+        "CORS_origins": [],
+        "username": "freqtrader",
+        "password": ""
+    },
+    "bot_name": "freqtrade",
+    "initial_state": "running",
+    "forcebuy_enable": true,
+    "internals": {
+        "process_throttle_secs": 5
+    }
+}
