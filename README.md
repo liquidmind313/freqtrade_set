@@ -23,7 +23,7 @@
 # strategy installation
 9. ```cd ~```
 10. ```git clone https://github.com/liquidmind313/freqtrade-set.git```
-11. ```cd freqtrade-set/kucoin-config```
+11. ```cd freqtrade-set/NFi-772-KC```
 12. ```sudo cp NostalgiaForInfinityNext.py ../../freqtrade/user_data/strategies/```
 
 # install nano
