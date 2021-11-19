@@ -137,11 +137,6 @@
         "enabled": true,
         "token": " ",
         "chat_id": " ",
-"keyboard": [
-        ["/profit","/balance","/status table","/daily"],
-        ["/performance","/logs","/show_config","/whitelist"]
-        ["/reload_config","/help","/start","/stop"]
-        ],
         "notification_settings": {
             "status": "silent",
             "warning": "on",
@@ -152,6 +147,7 @@
             "sell_cancel": "off",
             "buy_fill": "off",
             "sell_fill": "off"
+           }
     },
     "api_server": {
         "enabled": true,
@@ -168,6 +164,6 @@
     "initial_state": "running",
     "forcebuy_enable": true,
     "internals": {
-        "process_throttle_secs": 5
+    "process_throttle_secs": 5
     }
 }
