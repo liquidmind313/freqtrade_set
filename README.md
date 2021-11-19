@@ -18,12 +18,12 @@
 # creates new config *quiz
 8. ```freqtrade new-config -c config.json```
 *! IMPORTANT !
-*(you will need to copy over the whole "config.json" content from "freqtrade-nfi-setup" git depending on the exchange you will use)*
+*(you will need to copy over the whole "config.json" content from "freqtrade-set" git depending on the exchange you will use)*
 
 # strategy installation
 9. ```cd ~```
-10. ```git clone https://github.com/liquidmind313/freqtrade-nfi-setup.git```
-11. ```cd freqtrade-nfi-setup/kucoin-config```
+10. ```git clone https://github.com/liquidmind313/freqtrade-set.git```
+11. ```cd freqtrade-set/kucoin-config```
 12. ```sudo cp NostalgiaForInfinityNext.py ../../freqtrade/user_data/strategies/```
 
 # install nano
@@ -37,7 +37,7 @@
 17. copy your exchange and telegram keys somewhere safe
 18. ```ctrl+x``` 
 19. ```cd``` 
-20. ```cd freqtrade-nfi-setup/kucoin-config```
+20. ```cd freqtrade-set/kucoin-config```
 21. ```sudo cp config.json ../../freqtrade```
 22. ```cd```
 23. ```cd freqtrade```
