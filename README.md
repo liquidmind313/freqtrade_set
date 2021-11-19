@@ -37,7 +37,7 @@
 17. copy your exchange and telegram keys somewhere safe
 18. ```ctrl+x``` 
 19. ```cd``` 
-20. ```cd freqtrade-set/kucoin-config```
+20. ```cd freqtrade-set/NFi-772-KC```
 21. ```sudo cp config.json ../../freqtrade```
 22. ```cd```
 23. ```cd freqtrade```
