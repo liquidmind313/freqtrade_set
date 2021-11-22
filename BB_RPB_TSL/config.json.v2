@@ -1,6 +1,6 @@
-// for BB_RPB_TSL for KC with PROXY use - not tested
+// for BB_RPB_TSL for KC with PROXY use  
 {
-    "max_open_trades": 5,
+    "max_open_trades": 3,
     "stake_currency": "USDT",
     "stake_amount": "unlimited",
     "tradable_balance_ratio": 0.99,
@@ -64,10 +64,6 @@
             "ETH/USDT"
         ],
        "pair_blacklist": [
-            // Exchange Tokens
-            "KCS/.*",
-            // Major Crypto
-            "(BTC|ETH)/.*",
             // Leverage tokens
             ".*(3|3L|3S)/.*",
             // Fiat
