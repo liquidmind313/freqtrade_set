@@ -50,7 +50,7 @@
 
 # starting the bot
 37. ```freqtrade trade --strategy NostalgiaForInfinityNext```
-38. press CTRL+A+D
+38. press ```ctrl+a+d```
 # check telegram for status and start
 
 # (extra "forcebuy" function)
