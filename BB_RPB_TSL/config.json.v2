@@ -133,17 +133,6 @@
         "enabled": true,
         "token": " ",
         "chat_id": " ",
-        "notification_settings": {
-            "status": "silent",
-            "warning": "on",
-            "startup": "silent",
-            "buy": "silent",
-            "sell": "silent",
-            "buy_cancel": "off",
-            "sell_cancel": "off",
-            "buy_fill": "off",
-            "sell_fill": "off"
-           }
     },
     "api_server": {
         "enabled": true,
