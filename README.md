@@ -1,5 +1,6 @@
-*for vm setup 2vcpu 2gb ram 10gb hdd recommended - ubuntu lts*  
-*kucoin ref: https://www.kucoin.com/ucenter/signup?rcode=r3AP4HF
+
+*for vm setup 1vcpu 2gb ram 10gb hdd recommended - ubuntu lts*  
+*kucoin ref -20%: https://www.kucoin.com/ucenter/signup?rcode=r3AP4HF 
  
 
 # download
@@ -15,10 +16,8 @@
 # then activate your .env
 7. ```source ./.env/bin/activate```
 
-# creates new config *quiz
+# (for raw config) creates new config *quiz
 8. ```freqtrade new-config -c config.json```
-*! IMPORTANT !
-*(you will need to copy over the whole "config.json" content from "freqtrade-set" git depending on the exchange you will use)*
 
 # strategy installation
 9. ```cd ~```
@@ -31,20 +30,11 @@
 14. ```sudo apt install nano```
 15. ```cd```
 
-# mod the config file !
-15. ```cd freqtrade```
-16. ```sudo nano config.json```
-17. copy your exchange and telegram keys somewhere safe
-18. ```ctrl+x``` 
-19. ```cd``` 
-20. ```cd freqtrade-set/NFi-772-KC```
-21. ```sudo cp config.json ../../freqtrade```
-22. ```cd```
-23. ```cd freqtrade```
-24. ```sudo nano config.json```
-25. paste the exchange and telegram keys  
-26. ```ctrl+s```
-27. ```ctrl+x```
+# copy over the config file !
+15. ```cd ~/freqtrade-set/```
+16. ```sudo cp config.json ../freqtrade```
+17. paste in your API and Telegram keys
+18. ```ctrl+x,s``` 
 
 # install screen
 28. ```sudo apt-get install screen```
@@ -61,7 +51,7 @@
 
 # starting the bot
 37. ```freqtrade trade --strategy NostalgiaForInfinityNext```
-38. press CTRL+A+D
+38. press ```ctrl+a+d```
 # check telegram for status and start
 
 # (extra "forcebuy" function)

@@ -1,6 +1,6 @@
-// for BB_RPB_TSL for KC with PROXY use - not tested
+// for BB_RPB_TSL for KC with PROXY use  
 {
-    "max_open_trades": 5,
+    "max_open_trades": 3,
     "stake_currency": "USDT",
     "stake_amount": "unlimited",
     "tradable_balance_ratio": 0.99,
@@ -64,10 +64,6 @@
             "ETH/USDT"
         ],
        "pair_blacklist": [
-            // Exchange Tokens
-            "KCS/.*",
-            // Major Crypto
-            "(BTC|ETH)/.*",
             // Leverage tokens
             ".*(3|3L|3S)/.*",
             // Fiat
@@ -75,7 +71,7 @@
             // Stable tokens
             "(BUSD|USDT|TUSD|USDC|CUSDT|DAI|USDN)/.*",
             // FAN Tokens
-            "(ACM|AFA|ALA|ALL|APL|ASR|ATM|BAR|CAI|CITY|FOR|GAL|GOZ|IBFK|JUV|LEG|LOCK-1|NAVI|NMR|NOV|OG|PFL|PSG|R>
+            "(ACM|AFA|ALA|ALL|APL|ASR|ATM|BAR|CAI|CITY|FOR|GAL|GOZ|IBFK|JUV|LEG|LOCK-1|NAVI|NMR|NOV|OG|PFL|PSG|ROUSH|STV|TH|TRA|UCH|UFC|YBO)/.*",
             // Other Coins
             "(SLP|XVS|MEM|AMPL|XYM|POLX|CARR|SKEY|MASK|KLV|TLOS|JAR|BTCST|SUPER|LAYER|CTSI|MKR|HYDRA|DEGO)/.*",
             // Other A
@@ -137,17 +133,6 @@
         "enabled": true,
         "token": " ",
         "chat_id": " ",
-        "notification_settings": {
-            "status": "silent",
-            "warning": "on",
-            "startup": "silent",
-            "buy": "silent",
-            "sell": "silent",
-            "buy_cancel": "off",
-            "sell_cancel": "off",
-            "buy_fill": "off",
-            "sell_fill": "off"
-           }
     },
     "api_server": {
         "enabled": true,
